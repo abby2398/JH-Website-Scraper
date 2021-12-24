@@ -1,0 +1,98 @@
+    .search-form{
+        color: #999;    
+    }
+
+    #search {
+        /*width: auto;*/
+        width: 500px;
+        height: 40px;
+        opacity: 0.7;
+        border-radius: 10px;
+        font-size: 16px;
+    }
+    
+    #container {
+        width: auto;
+        padding: 10px;
+        border: 5px solid #bf71ff;
+        margin: 0;
+        text-align: center;
+    }
+
+    #School-of-Unani,
+    #School-of-Chemical,
+    #School-of-Pharmaceutial,
+    #School-of-Nursing,
+    #School-of-Interdisciplinary,
+    #School-of-Management,
+    #School-of-Engineering,
+    #School-of-Humanities,
+    #School-of-Law
+     {
+        margin-top: 30px;
+        width: 500px;
+        height: 40px;
+        opacity: 0.7;
+        border-radius: 10px;
+        font-size: 16px;
+        display: none;
+    }
+
+    #form-button {
+        border-radius: 12px;
+        margin: 4px 2px;
+        padding: 8px 16px;
+        text-align: center;
+        display: inline-block;
+        font-size: 16px;
+        /*border: 2px solid blueviolet;*/
+    }
+
+
+    .popup .overlay {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.7);
+        z-index: 1;
+        display: none;
+    }
+
+    .popup .content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%) scale(0);
+        background: #fff;
+        width: 450px;
+        height: 220px;
+        z-index: 2;
+        text-align: center;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    .popup .close-btn {
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        width: 30px;
+        height: 30px;
+        background: #222;
+        color: #fff;
+        font-size: 25px;
+        font-weight: 600;
+        line-height: 30px;
+        text-align: center;
+        border-radius: 50%;
+    }
+    .popup.active .overlay {
+        display: block;
+    }
+    .popup.active .content {
+        transition: all 300ms ease-in-out;
+        transform: translate(-50%,-50%) scale(0);
+    }
+

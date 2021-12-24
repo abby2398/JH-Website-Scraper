@@ -1,0 +1,269 @@
+<DOCTYPE html>
+
+<html>   
+     <head>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    </head>
+
+    <body style="background-color:#26273b;">
+
+        <h1 style="color: white; text-align: center;">Jamia Hamdard Faculty Data Scraper</h1>
+        <nav style="text-align: center;">
+            <a style="color: #198ec1;" href="#">HOME</a>
+            <a style="color: #198ec1;" href="about">ABOUT</a>        
+        </nav>
+        <br>
+        <div id="container" class="field-wrap country" >
+
+            <!-- <div class="search-form"> -->
+        <form action="/fetch_data" method="POST" >
+            <div>
+                <select id="search" name='school'>
+                    <option value="" class="selected">Select your school</option>
+                    <option value="School-of-Chemical">School of Chemical & Life Sciences</option>
+                    <option value="School-of-Unani">School of Unani Medical Education & Research</option>
+                    <option value="School-of-Pharmaceutial">School of Pharmaceutial Education & Research</option>
+                    <option value="School-of-Nursing">School of Nursing Sciences and Allied Health</option>
+                    <option value="School-of-Interdisciplinary">School of Interdisciplinary Studies</option>
+                    <option value="School-of-Management">School of Management and Business Studies</option>
+                    <option value="School-of-Engineering">School of Engineering Sciences & Technology</option>
+                    <option value="School-of-Humanities">School of Humanities & Social Sciences</option>
+                    <option value="School-of-Law">School of Law, Hamdard Institute of Legal Studies</option>
+                </select>
+            </div>
+
+            <div>
+                <select id="School-of-Chemical"name="dept1">
+                    <option selected="">Choose your Department</option>
+                    <option value="eo">Department of Biochemistry</option>
+                    <option value="eq">Department of Biotechnology</option>
+                    <option value="es">Department of Botany</option>
+                    <option value="gm">Department of Chemistry</option>
+                    <option value="go">Department of Medical Elementology and Toxicology</option>
+                    <option value="gq">Centre for Clinical and Translational Research</option>
+                </select>
+            </div>
+
+            <div>
+                <select id="School-of-Unani" name="dept2">
+                    <option selected="">Choose your Department</option>
+                    <option value="is">Department of Moalajat</option>
+                    <option value="ig">Department of Ilmul Advia</option>
+                    <option value="kc">Department of Tahaffuzi Wa Samaji Tibb</option>
+                    <option value="io">Department of Kulliyat</option>
+                    <option value="ke">Department of Tashreeh (Anatomy)</option>
+                    <option value="ka">Department of Munafeul Aza</option>
+                    <option value="ii">Department of Ilmul Saidla'</option>
+                    <option value="ik">Department of Jarahiyat</option>
+                    <option value="ia">Department of Amraz-e-Niswan Wa Qabalat</option>
+                    <option value="ic">Department of Atfaal</option>
+                    <option value="iq">Department of Mahiyatul Amraz</option>
+                    <option value="im">Department of Jild</option>
+                    <option value="ie">Department of Ilaaj Bil Tadbeer</option>
+                    <option value="gs">Department of Ain, Uzn Anaf Wa Halaq</option>
+                 </select>
+            </div>
+            <div>
+                <select id="School-of-Pharmaceutial" name="dept3">
+                    <option selected="">Choose your Department</option>
+                    <option value="ga">Department of Pharmaceutics</option>
+                    <option value="gc">Department of Pharmaceutical Chemistry</option>
+                    <option value="ge">Department of Pharmacognosy and Phytochemistry</option>
+                    <option value="gg">Department of Pharmacology</option>
+                </select>
+            </div>
+            <div>
+                <select id="School-of-Nursing" name="dept4">
+                    <option selected="">Choose your Department</option>
+                    <option value="kg">Department of Obstetrics & Gynaecological Nursing</option>
+                    <option value="ki">Department of Community Health Nursing</option>
+                    <option value="kk">Department of Medical Surgical Nursing</option>
+                    <option value="km">Department of Child Health Nursing</option>
+                    <option value="ko">Department of Mental Health Nursing</option>
+                    <option value="om">Department of Rehabilitation Sciences</option>
+                    <option value="oo">Department of Paramedical Sciences</option>
+                </select>
+            </div>
+            <div>
+                <select id="School-of-Interdisciplinary" name="dept5">
+                    <option selected="">Choose your Department</option>
+                    <option value="ma">Institute of Molecular Medicine</option>
+                    <option value="mc">Department of Food Technology</option>
+                </select>
+            </div>
+            <div>
+                <select id="School-of-Management" name="dept6">
+                    <option selected="">Choose your Department</option>
+                    <option value="mg">Department of Management Studies</option>
+                    <option value="ok">Department of Healthcare and Pharmaceutical Mgt.</option>
+                    <option value="qe">Department of Hotel Management & Catering Tech.</option>
+                </select>
+            </div>
+            <div>
+                <select id="School-of-Engineering" name="dept7">
+                    <option selected="">Choose your Department</option>
+                    <option value="ms">Department of Computer Science & Engineering</option>
+                    <option value="og">Department of Bioinformatics</option>
+                    <option value="oi">Department of Computer Science</option>
+                </select>
+            </div>
+            <div>
+                <select id="School-of-Humanities" name="dept8">
+                    <option selected="">Choose your Department</option>
+                    <option value="kq">Department of Islamic Studies</option>
+                    <option value="ks">Centre for Federal Studies</option>
+                </select>
+            </div>
+            <div>
+                <select id="School-of-Law" name="dept9">
+                    <option selected="">Choose your Department</option>
+                    <option value="os">School of Law, Hamdard Institute of Legal Studies</option>
+                </select>
+            </div>
+
+            <br>
+            <button type="submit" id="form-button">Submit</button>
+            
+        </form>    
+        </div> <! --purple box -->
+            <br><br>
+            
+        <div style="margin-top: 600px;">
+            <hr>
+            <p style="text-align: center;
+               color:white;     "  > &copy; 2021 All rights reserved.</p>
+        </div>    
+    </body>
+</html>    
+
+<style type="text/css">
+
+    .search-form{
+        color: #999;    
+    }
+
+    #search {
+        /*width: auto;*/
+        width: 500px;
+        height: 40px;
+        opacity: 0.7;
+        border-radius: 10px;
+        font-size: 16px;
+    }
+
+    #container {
+        width: auto;
+        padding: 10px;
+        border: 5px solid #bf71ff;
+        margin: 0;
+        text-align: center;
+    }
+
+    #School-of-Unani,
+    #School-of-Chemical,
+    #School-of-Pharmaceutial,
+    #School-of-Nursing,
+    #School-of-Interdisciplinary,
+    #School-of-Management,
+    #School-of-Engineering,
+    #School-of-Humanities,
+    #School-of-Law
+     {
+        margin-top: 30px;
+        width: 500px;
+        height: 40px;
+        opacity: 0.7;
+        border-radius: 10px;
+        font-size: 16px;
+        display: none;
+    }
+
+    #form-button {
+        border-radius: 12px;
+        margin: 4px 2px;
+        padding: 8px 16px;
+        text-align: center;
+        display: inline-block;
+        font-size: 16px;
+        /*border: 2px solid blueviolet;*/
+    }
+
+
+    .popup .overlay {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.7);
+        z-index: 1;
+        display: none;
+    }
+
+    .popup .content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%) scale(0);
+        background: #fff;
+        width: 450px;
+        height: 220px;
+        z-index: 2;
+        text-align: center;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    .popup .close-btn {
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        width: 30px;
+        height: 30px;
+        background: #222;
+        color: #fff;
+        font-size: 25px;
+        font-weight: 600;
+        line-height: 30px;
+        text-align: center;
+        border-radius: 50%;
+    }
+    .popup.active .overlay {
+        display: block;
+    }
+    .popup.active .content {
+        transition: all 300ms ease-in-out;
+        transform: translate(-50%,-50%) scale(0);
+    }
+
+
+</style>
+
+
+
+
+<script>
+    $(document).ready(function() {            
+        $("#search").change(function(e) {
+            hideAll();
+            $(e.target.options).removeClass();
+            var $selectedOption = $(e.target.options[e.target.options.selectedIndex]);
+            $selectedOption.addClass('selected');
+            $('#' + $selectedOption.val()).show();
+        });
+    });
+    function hideAll() {
+        $("#School-of-Unani").hide();
+        $("#School-of-Chemical").hide();
+        $("#School-of-Pharmaceutial").hide();
+        $("#School-of-Nursing").hide();
+        $("#School-of-Interdisciplinary").hide();
+        $("#School-of-Management").hide();
+        $("#School-of-Engineering").hide();
+        $("#School-of-Humanities").hide();
+        $("#School-of-Law").hide();
+    }
+    // function togglePopup(){
+    //     document.getElementById("popup-1").classList.toggle("active");
+    // }    
+</script>        
