@@ -14,14 +14,4 @@ It lets you download the faculty datils of the department of particular School. 
 
 ## UI
 
-![alt text](https://github.com/divyadreddy/SSD33/blob/main/screenshots/Screenshot%202020-11-21%20at%2011.14.42%20PM.png)
 
-![alt text](https://github.com/divyadreddy/SSD33/blob/main/screenshots/Screenshot%202020-11-21%20at%2011.14.44%20PM.png)
-
-![alt text](https://github.com/divyadreddy/SSD33/blob/main/screenshots/Screenshot%202020-11-21%20at%2011.14.46%20PM.png)
-
-![alt text](https://github.com/divyadreddy/SSD33/blob/main/screenshots/Screenshot%202020-11-21%20at%2011.14.48%20PM.png)
-
-![alt text](https://github.com/divyadreddy/SSD33/blob/main/screenshots/Screenshot%202020-11-21%20at%2011.14.50%20PM.png)
-# JH_Faculty_Data_Scraper
-# JH_Faculty_Data_Scraper
