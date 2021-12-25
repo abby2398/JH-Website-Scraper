@@ -13,5 +13,11 @@ It lets you download the faculty datils of the department of particular School. 
 * ``python manage.py runserver 8080`` or any other Port.
 
 ## UI
+![alt text](https://github.com/abby2398/JH-Website-Scraper/blob/main/screenshots/Screenshot%20from%202021-08-01%2021-48-15.png)
+![alt text](https://github.com/abby2398/JH-Website-Scraper/blob/main/screenshots/Screenshot%20from%202021-08-01%2021-48-28.png)
+![alt text](https://github.com/abby2398/JH-Website-Scraper/blob/main/screenshots/Screenshot%20from%202021-08-01%2021-48-32.png)
+![alt text](https://github.com/abby2398/JH-Website-Scraper/blob/main/screenshots/Screenshot%20from%202021-08-01%2021-48-38.png)
+
+
 
 
